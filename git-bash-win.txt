@@ -1,0 +1,146 @@
+
+paulb@Paul MINGW64 ~/testmapp
+$ ping 8.8.8.8
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=13ms TTL=116
+Reply from 8.8.8.8: bytes=32 time=13ms TTL=116
+Reply from 8.8.8.8: bytes=32 time=14ms TTL=116
+Reply from 8.8.8.8: bytes=32 time=13ms TTL=116
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 13ms, Maximum = 14ms, Average = 13ms
+
+paulb@Paul MINGW64 ~/testmapp
+$ traceroute 8.8.8.8
+bash: traceroute: command not found
+
+paulb@Paul MINGW64 ~/testmapp
+$ trace 8.8.8.8
+bash: trace: command not found
+
+paulb@Paul MINGW64 ~/testmapp
+$ tracert 8.8.8.8
+
+Tracing route to dns.google [8.8.8.8]
+over a maximum of 30 hops:
+
+  1     2 ms     2 ms     1 ms  192.168.68.1
+  2     3 ms     3 ms     2 ms  dsldevice.lan [192.168.10.1]
+  3     3 ms     3 ms     3 ms  ti3148a430.ti.telenor.net [146.172.70.168]
+  4    13 ms    14 ms    13 ms  ti3003c400-ae23-0.ti.telenor.net [146.172.98.122]
+  5    13 ms    13 ms    13 ms  ti3163c360-ae2-0.ti.telenor.net [146.172.98.45]
+  6    11 ms    16 ms    14 ms  ti3001b400-ae3-0.ti.telenor.net [146.172.105.62]
+  7    13 ms    13 ms    13 ms  209.85.175.193
+  8    13 ms    15 ms    15 ms  142.250.213.181
+  9    14 ms    14 ms    14 ms  209.85.246.27
+ 10    13 ms    20 ms    17 ms  dns.google [8.8.8.8]
+
+Trace complete.
+
+paulb@Paul MINGW64 ~/testmapp
+$ tracert 8.8.8.8
+
+Tracing route to dns.google [8.8.8.8]
+over a maximum of 30 hops:
+
+  1     3 ms     3 ms     3 ms
+
+paulb@Paul MINGW64 ~/testmapp
+$ cd ..
+
+paulb@Paul MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Dropbox/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{fde188fa-bb99-11ef-af3c-83237a6a27cd}.TM.blf
+ NTUSER.DAT{fde188fa-bb99-11ef-af3c-83237a6a27cd}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fde188fa-bb99-11ef-af3c-83237a6a27cd}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ansel/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ testmapp/
+
+paulb@Paul MINGW64 ~
+$ cd testmapp
+
+paulb@Paul MINGW64 ~/testmapp
+$ ls
+SlackSetup.exe*  visma_enskild_firma_2024.01_setup.exe*
+
+paulb@Paul MINGW64 ~/testmapp
+$ rm SlackStetup.exe
+rm: cannot remove 'SlackStetup.exe': No such file or directory
+
+paulb@Paul MINGW64 ~/testmapp
+$ rm SlackSetup.exe
+
+paulb@Paul MINGW64 ~/testmapp
+$ ls
+visma_enskild_firma_2024.01_setup.exe*
+
+paulb@Paul MINGW64 ~/testmapp
+$ ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::92e5:2f40:6dda:aa65%2
+   IPv4 Address. . . . . . . . . . . : 192.168.68.117
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::2aee:52ff:fe84:989c%2
+                                       192.168.68.1
+
+Wireless LAN adapter Wi-Fi:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+paulb@Paul MINGW64 ~/testmapp
+$ ^C
+
+paulb@Paul MINGW64 ~/testmapp
+$
